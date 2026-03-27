@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: rgba(var(--background));
+  --color-border: rgba(var(--border));
+  --color-card: rgba(var(--card));
+  --color-copy-primary: rgba(var(--copy-primary));
+  --color-copy-secondary: rgba(var(--copy-secondary));
+  --color-cta: rgba(var(--cta));
+  --color-cta-active: rgba(var(--cta-active));
+  --color-cta-text: rgba(var(--cta-text));
+  --color-primary: #9baa8a;
+
+  --font-family-IBM: "IBM Plex Sans Arabic", sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    font-family: "Tajawal", sans-serif;
+  }
+  h3 {
+    @apply text-2xl font-bold text-copy-primary;
+  }
+  h1{
+    @apply text-4xl font-bold text-copy-primary
+  }
+  p{
+    @apply text-sm text-copy-primary
+  }
+  .glass {
+    @apply backdrop-blur-md  shadow-sm;
+    background: rgba(var(--card), 0.6);
+  }
+
+ 
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .background-primary{
+    @apply bg-[#0e131a]
+  }
+   .background-secondary{
+    @apply bg-[#161B22]
+  }
+  .text-primary{
+    @apply text-white
+  }
+  .cta{
+    @apply  text-[#00F5D4]
+  }
+}
