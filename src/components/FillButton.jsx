@@ -1,43 +1,45 @@
-import { useState } from "react";
 import { motion } from "motion/react";
+
 export default function FillButton({
   children,
- 
   fillColor = "#9baa8a",
-  borderClass = "border-black text-black",
+  className = "",
   onClick,
-  className = " ",
 }) {
-
-  
   return (
     <motion.button
-      
+      onClick={onClick}
       initial="initial"
       whileHover="hover"
       whileTap="tap"
-      className={`overflow-hidden sm:relative px-8 py-3 rounded-2xl font-bold cursor-pointer bg-white text-black border-none ${className}`}
+      // Removed bg-white so the background is clean for the animation
+      className={`relative overflow-hidden px-8 py-3 rounded-2xl font-bold cursor-pointer border-none bg-white text-black ${className}`}
     >
-
+      {/* The Animated Fill Layer */}
       <motion.span
         variants={{
-          initial: { scale: 0, opacity: 1 },
-          hover: { scale: 1.5, opacity: 1  }, 
+          initial: { scale: 0 ,opacity:1 },
+          hover: { scale: 1 ,opacity:1},
+          top: { scale: 1 , opacity:1},
         }}
         transition={{
-          duration: 1,
-          ease: [0.19, 1, 0.22, 1], 
+          duration: 0.8,
+          ease: [0.19, 1, 0.22, 1],
         }}
-        className={`absolute inset-0 bg-[${fillColor}] rounded-full`}
+        // Use the style prop for the dynamic background color
         style={{
-          width: "160%", 
-          height: "500%", 
-          left: "-30%",
-          top: "-200%",
+          backgroundColor: fillColor ,
+          width: "150%",
+          height: "400%",
+          position: "absolute",
+          top: "-150%",
+          left: "-25%",
+          borderRadius: "50%",
           zIndex: 0,
         }}
       />
 
+      {/* The Text Layer */}
       <span className="relative z-10">{children}</span>
     </motion.button>
   );

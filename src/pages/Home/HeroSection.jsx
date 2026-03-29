@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import profile from "../../assets/profile.jpg";
 import laptopImage from "../../assets/laptopImage1.avif";
-import { a } from "motion/react-client";
+import { a, p, span } from "motion/react-client";
 import linkedin from "../../assets/linkedin.png";
 import telegram from "../../assets/telegram.png";
 import facebook from "../../assets/facebook.png";
@@ -39,6 +39,23 @@ export default function HeroSection() {
       link: "https://github.com/HayU49",
       icon: github,
     },
+  ];
+  const techStach = [
+    "HTML",
+    "CSS",
+    "js",
+    "ts",
+    "React",
+    "Tailwind",
+    "ExpressJs",
+    "NestJs",
+    "Postgresql",
+    "Python",
+    "Pandas",
+    "numpy",
+    "Matplotlib",
+    "TensorFlow",
+    "Scikit-Learn",
   ];
   return (
     <div className=" my-20 ">
@@ -89,7 +106,7 @@ export default function HeroSection() {
                 alt="Laptop displaying code"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-5">
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent flex flex-col justify-end p-5">
                 <h3 className="text-white text-sm font-semibold uppercase tracking-wider">
                   Haider Ali
                 </h3>
@@ -116,15 +133,42 @@ export default function HeroSection() {
           {/* links */}
           <div className="flex justify-between">
             {linkList.map((link) => (
-              <a
-                href={link.link}
-                target="_blank"
-                className="p-2 bg-white rounded-2xl "
-              >
-                <img className="w-10 h-10 " src={link.icon} color="white" />
-              </a>
+              <FillButton className="flex items-center justify-center py-2! px-2!">
+                <a rel="noreferrer" href={link.link} target="_blank">
+                  <img className="w-10 h-10 " src={link.icon} color="white" />
+                </a>
+              </FillButton>
             ))}
           </div>
+        </div>
+      </div>
+
+      <div className="bg-white p-4 rounded-2xl mt-20">
+        <h2 className="text-xl sm:text-2xl font-medium text-black">
+          My mission is to craft beautiful, responsive applications that solve
+          real-world problems through a blend of thoughtful engineering and
+          Machine Learning. By combining solid full-stack architecture with Deep
+          Learning insights, I build seamless, data-driven experiences that
+          perform intelligently across all platforms.
+        </h2>
+
+        <div className="relative flex overflow-x-hidden  py-4  border-gray-200">
+          {/* Container for the moving text */}
+          <div className="animate-ticker whitespace-nowrap flex">
+            {/* Render the list twice for a seamless loop */}
+            {[...techStach, ...techStach].map((tech, index) => (
+              <span
+                key={index}
+                className="mx-8 text-lg font-medium text-gray-500 uppercase tracking-widest"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          {/* Optional: Gradient Overlays for a "fading" edge effect */}
+          <div className="absolute inset-y-0 left-0 w-20 bg-linear-to-r  to-transparent"></div>
+          <div className="absolute inset-y-0 right-0 w-20 bg-linear-to-l to-transparent"></div>
         </div>
       </div>
     </div>
