@@ -33,6 +33,12 @@ button,
 a {
   -webkit-user-select: none;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  outline: none;
 }
 @layer base {
   html,
@@ -55,6 +61,12 @@ a {
   a,
   button {
     -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    outline: none;
+    @apply select-none outline-none;
   }
   .glass {
     @apply backdrop-blur-md  shadow-sm;
