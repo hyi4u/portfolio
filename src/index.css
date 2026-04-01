@@ -43,7 +43,10 @@
   p {
     @apply text-sm text-white;
   }
-
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
+  }
   .glass {
     @apply backdrop-blur-md  shadow-sm;
     background: rgba(var(--card), 0.6);
