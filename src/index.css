@@ -25,6 +25,15 @@
   }
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  -webkit-user-select: none;
+  user-select: none;
+}
 @layer base {
   html,
   body {
