@@ -33,15 +33,16 @@ export default function ProjectTemplate({
         ))}
       </div>
       <div className="grid grid-cols-2 gap-1">
-        <FillButton
+        <a
+          className="col-span-2"
           href={websiteLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="capitalize w-full"
         >
-          open the website
-        </FillButton>
-
+          <FillButton className="capitalize w-full">
+            open the website
+          </FillButton>
+        </a>
         {codeState === "private" ? (
           <p className=" sm:text-xl col-span-2 pt-4 capitalize text-gray-300 border-b border-gray-300  w-fit">
             -the webiste is private. the code unavailable.

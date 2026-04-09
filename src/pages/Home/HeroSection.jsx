@@ -85,7 +85,7 @@ export default function HeroSection() {
             </p>
           </div>
           <FillButton fillClass="bg-[#9baa8a]" className="text-bold text-xl">
-            View My Portfolio
+            View My Portifolio
           </FillButton>
         </div>
         {/* right side */}
