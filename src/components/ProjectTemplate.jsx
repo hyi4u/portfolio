@@ -27,7 +27,7 @@ export default function ProjectTemplate({
       </div>
       <div className="flex flex-wrap gap-2">
         {tagsArray.map((item) => (
-          <span className="bg-primary/50 text-[#def5c3] font-bold px-2 py-1  rounded-2xl uppercase ">
+          <span className="bg-primary/50 text-[#def5c3] font-bold px-2 py-1  rounded-2xl uppercase  leading-[none] ">
             {item}
           </span>
         ))}
@@ -39,7 +39,7 @@ export default function ProjectTemplate({
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FillButton className="capitalize w-full">
+          <FillButton className="capitalize w-full  leading-[none]">
             open the website
           </FillButton>
         </a>
@@ -60,7 +60,7 @@ export default function ProjectTemplate({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FillButton className="capitalize px-2! w-full">
+                <FillButton className="capitalize px-2! w-full  leading-[none]">
                   {" "}
                   {item.label}{" "}
                 </FillButton>

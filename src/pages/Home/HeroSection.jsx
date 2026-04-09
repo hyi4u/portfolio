@@ -84,7 +84,7 @@ export default function HeroSection() {
               intelligent, data-driven applications.
             </p>
           </div>
-          <FillButton fillClass="bg-[#9baa8a]" className="text-bold text-xl">
+          <FillButton fillClass="bg-[#9baa8a]" className="text-bold text-xl  leading-[none]">
             View My Portifolio
           </FillButton>
         </div>
@@ -133,7 +133,7 @@ export default function HeroSection() {
           {/* links */}
           <div className="flex justify-between">
             {linkList.map((link) => (
-              <FillButton className="flex items-center justify-center py-2! px-2!">
+              <FillButton className="flex items-center justify-center py-2! px-2! leading-[none]">
                 <a rel="noreferrer" href={link.link} target="_blank">
                   <img className="w-10 h-10 " src={link.icon} color="white" />
                 </a>
