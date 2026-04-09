@@ -27,7 +27,7 @@ export default function ProjectTemplate({
       </div>
       <div className="flex flex-wrap gap-2">
         {tagsArray.map((item) => (
-          <span className="bg-primary/50 text-[#def5c3] font-bold px-2 py-1  rounded-2xl uppercase  leading-[none] ">
+          <span className="bg-primary/50 text-[#def5c3] font-bold px-2 py-1  rounded-2xl uppercase text-center flex items-center justify-center  ">
             {item}
           </span>
         ))}
