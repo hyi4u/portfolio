@@ -5,9 +5,19 @@ export default function FillButton({
   fillColor = "#9baa8a",
   className = "",
   onClick,
+  href, // ← add this
+  download, // ← add this
+  target,
+  rel,
 }) {
+  const Tag = href ? motion.a : motion.button; // ← swap element type
+
   return (
-    <motion.button
+    <Tag
+      href={href}
+      download={download}
+      target={target}
+      rel={rel}
       onClick={onClick}
       initial="initial"
       whileHover="hover"
@@ -49,6 +59,6 @@ export default function FillButton({
       >
         {children}
       </span>
-    </motion.button>
+    </Tag>
   );
 }
