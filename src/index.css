@@ -26,6 +26,9 @@
 }
 
 @layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
   html,
   body {
     font-family: "Tajawal", sans-serif;
