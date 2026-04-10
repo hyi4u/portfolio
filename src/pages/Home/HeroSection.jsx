@@ -58,7 +58,7 @@ export default function HeroSection() {
     "Scikit-Learn",
   ];
   return (
-    <div className=" my-20 ">
+    <div className=" pt-32 pb-10 sm:my-20 ">
       <div className="py-2 bg-primary/30 text-primary  w-fit flex justify-center items-center rounded-full   ">
         <Dot
           width={"25px"}
@@ -92,7 +92,7 @@ export default function HeroSection() {
         <div className="flex flex-col  justify-between">
           {/* images */}
           <div className="flex flex-col sm:flex-row items-center gap-5 sm:gap-10 justify-between ">
-            <div className="h-70  w-full md:w-60">
+            <div className="w-full md:w-60 aspect-4/5 sm:h-70">
               <img
                 className="w-full h-full object-cover  rounded-2xl"
                 src={profile}
