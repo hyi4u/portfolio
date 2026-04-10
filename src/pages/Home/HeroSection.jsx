@@ -58,7 +58,7 @@ export default function HeroSection() {
     "Scikit-Learn",
   ];
   return (
-    <div className=" pt-32 pb-10 sm:my-20 ">
+    <div className=" pt-6 sm:pt-32 pb-10 sm:my-20 ">
       <div className="py-2 bg-primary/30 text-primary  w-fit flex justify-center items-center rounded-full   ">
         <Dot
           width={"25px"}

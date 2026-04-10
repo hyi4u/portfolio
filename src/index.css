@@ -27,8 +27,9 @@
 
 @layer base {
   html {
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
   html,
   body {
@@ -64,7 +65,8 @@
     @apply flex items-center justify-center;
   }
   .background-primary {
-    @apply bg-[#0e131a] pt-[env(safe-area-inset-top,20px)];
+    @apply bg-[#0e131a];
+    padding-top: env(safe-area-inset-top, 0px);
   }
   .background-secondary {
     @apply bg-[#161B22];
