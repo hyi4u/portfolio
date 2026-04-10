@@ -25,8 +25,7 @@ export default function TopProject() {
     {
       title: "NeuroScan AI",
       date: "2026",
-      proImg:
-        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000",
+      proImg: proImg,
       tagsArray: ["Python", "TensorFlow", "FastAPI", "React"],
       websiteLink: "https://neuroscan-demo.com",
       CodeRepo: [
@@ -44,8 +43,7 @@ export default function TopProject() {
     {
       title: "PharmaFlow ERP",
       date: "2025",
-      proImg:
-        "https://images.unsplash.com/photo-1587854692152-cbe660dbbb88?q=80&w=1000",
+      proImg: proImg,
       tagsArray: ["NestJS", "PostgreSQL", "Next.js"],
       websiteLink: "https://pharma-flow.com",
       CodeRepo: [
@@ -64,8 +62,7 @@ export default function TopProject() {
     {
       title: "EcoTrack Mobile",
       date: "2025",
-      proImg:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000",
+      proImg: proImg,
       tagsArray: ["React Native", "Firebase", "UI/UX"],
       websiteLink: "https://ecotrack.app",
       CodeRepo: [
@@ -83,8 +80,7 @@ export default function TopProject() {
     {
       title: "Aspirin Derivative In-Silico Analysis",
       date: "2026",
-      proImg:
-        "https://images.unsplash.com/photo-1532187875605-2fe358511423?q=80&w=1000",
+      proImg: proImg,
       tagsArray: ["ML", "Scikit-Learn", "RDKit", "Python"],
       websiteLink: "https://aspirin-research.vercel.app",
       CodeRepo: [
@@ -102,8 +98,7 @@ export default function TopProject() {
     {
       title: "SaaS Dashboard Kit",
       date: "2024",
-      proImg:
-        "https://images.unsplash.com/photo-1551288049-bbbda546697c?q=80&w=1000",
+      proImg: proImg,
       tagsArray: ["Tailwind", "TypeScript", "Chart.js"],
       websiteLink: "https://saas-kit.dev",
       CodeRepo: [
